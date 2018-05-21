@@ -1,0 +1,814 @@
+@font-face {
+  font-family: 'MyriadPro-Cond';
+  src: url("fonts/MyriadPro-Cond.eot?#iefix") format("embedded-opentype"), url("fonts/MyriadPro-Cond.otf") format("opentype"), url("fonts/MyriadPro-Cond.woff") format("woff"), url("fonts/MyriadPro-Cond.ttf") format("truetype"), url("fonts/MyriadPro-Cond.svg#MyriadPro-Cond") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'squareserifbold';
+  src: url("fonts/squareserif_bold-webfont.woff2") format("woff2"), url("fonts/squareserif_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  -webkit-clip-path: none;
+          clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
+
+ /* =WordPress Core End
+-------------------------------------------------------------- */
+/* scroll Top*/
+.scrollup {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  display: none;
+  z-index: 9999;
+  background: url("images/up.png") no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.65; }
+
+.scrollup:hover {
+  opacity: 1; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 100%; } }
+@media (min-width: 1180px) {
+  .container {
+    max-width: 1350px; } }
+a, input[type='submit'] {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  outline: none; }
+
+a:hover {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+h1, h2, h4, h3, h5, h6 {
+  font-family: "squareserifbold", "MyriadPro-Cond";
+  font-weight: 400; }
+
+h1 {
+  font-size: 26px;
+  line-height: 29px;
+  letter-spacing: -0.75px;
+  font-weight: 400;
+  margin-bottom: 20px; }
+
+h2 {
+  font-size: 24px;
+  line-height: 27px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  margin-bottom: 15px; }
+
+h3 {
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  margin-bottom: 13px; }
+
+h4 {
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  margin-bottom: 12px; }
+
+h5 {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.45px;
+  font-weight: 400;
+  margin-bottom: 10px; }
+
+h6 {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.45px;
+  font-weight: 400;
+  margin-bottom: 10px; }
+
+ul, ol {
+  padding-left: 0px;
+  margin-left: 0; }
+
+li {
+  list-style-position: inside;
+  margin-bottom: 6px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.5px; }
+
+p {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.5px; }
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 28px; }
+
+  h2 {
+    font-size: 27px;
+    line-height: 30px;
+    margin-bottom: 25px; }
+
+  h3 {
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 23px; }
+
+  h4 {
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 20px; }
+
+  h5 {
+    font-size: 19px;
+    line-height: 21px;
+    margin-bottom: 18px; }
+
+  h6 {
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 16px; }
+
+  li {
+    font-size: 18px;
+    line-height: 21px; }
+
+  p {
+    font-size: 18px;
+    line-height: 30px; } }
+body {
+  font-family: "MyriadPro-Cond";
+  color: #AA2423;
+  background-color: #fff; }
+
+/*Header*/
+.as_header {
+  padding: 85px 0px;
+  border-bottom: 10px solid #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: fixed; }
+  .as_header:before {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(85, 85, 85, 0.92);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .as_header h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 10px; }
+  .as_header h4 {
+    font-size: 26px;
+    line-height: 29px;
+    font-family: "MyriadPro-Cond";
+    font-weight: 400;
+    margin-bottom: 10px;
+    max-width: 75%; }
+  .as_header p {
+    font-size: 16px;
+    line-height: 19px; }
+    .as_header p a {
+      color: #fff;
+      text-decoration: underline; }
+      .as_header p a:hover {
+        color: #FF8400; }
+  .as_header .headerLeft {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.searchJob input {
+  border: none;
+  border-radius: 3px;
+  padding: 2px 7px;
+  color: #C7C7C7;
+  font-style: italic;
+  background-color: #fff;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 5px;
+  background-image: url("images/search.png");
+  background-repeat: no-repeat;
+  background-position: 97% 10px;
+  background-size: 20px 20px;
+  padding-right: 30px;
+  font-size: 18px;
+  line-height: 21px; }
+.searchJob input[type='submit'] {
+  padding: 5px 7px;
+  color: #fff;
+  font-style: normal;
+  background: #AA2423;
+  cursor: pointer; }
+  .searchJob input[type='submit']:hover {
+    background: #FF8400; }
+.searchJob p {
+  margin: 0;
+  padding: 0; }
+
+.main_banner {
+  display: none; }
+
+.mainHeader {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 3; }
+
+.main_menuOuter {
+  background-color: #fff;
+  padding: 5px 10px; }
+
+.as_mobile_menu {
+  border-radius: 4px;
+  width: 40px;
+  float: right; }
+  .as_mobile_menu i {
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    background-color: #AA2423;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 4px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s; }
+  .as_mobile_menu:hover i {
+    background-color: #FF8400; }
+
+@media only screen and (min-width: 480px) {
+  .searchJob {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 580px;
+    width: 100%; }
+    .searchJob input {
+      width: 68%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 68%;
+              flex: 0 68%; }
+    .searchJob input[type='submit'] {
+      width: 30%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 30%;
+              flex: 0 30%;
+      margin-left: 2%; } }
+@media only screen and (min-width: 768px) {
+  .as_header .headerLeft {
+    max-width: 500px; }
+
+  .main_banner {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    right: -45px;
+    width: 250px;
+    height: 250px;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    display: block; }
+    .main_banner .bgimg {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 250px;
+      height: 250px;
+      position: relative;
+      z-index: 3;
+      border-radius: 50%;
+      border: 15px solid #747373;
+      overflow: hidden; }
+      .main_banner .bgimg:before {
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        background-color: rgba(255, 240, 0, 0.52);
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0; } }
+@media only screen and (min-width: 992px) {
+  .as_header .headerLeft {
+    max-width: 500px; }
+
+  .main_banner {
+    right: -100px;
+    width: 550px;
+    height: 550px; }
+    .main_banner .bgimg {
+      width: 550px;
+      height: 550px; } }
+@media only screen and (min-width: 1820px) {
+  .main_banner {
+    right: -160px;
+    top: 44%;
+    width: 965px;
+    height: 965px; }
+    .main_banner .bgimg {
+      width: 965px;
+      height: 965px;
+      border-width: 35px; } }
+@media only screen and (min-width: 1200px) {
+  .as_header {
+    padding: 85px 0px; }
+    .as_header h1 {
+      font-size: 65px;
+      line-height: 65px;
+      margin-bottom: 15px;
+      letter-spacing: -1.65px; }
+    .as_header h4 {
+      font-size: 36px;
+      line-height: 41px;
+      margin-bottom: 15px;
+      max-width: 460px;
+      letter-spacing: 0px; }
+    .as_header p {
+      font-size: 18px;
+      line-height: 21px; }
+    .as_header .headerLeft {
+      max-width: 800px;
+      min-height: 375px; }
+
+  .searchJob {
+    margin: 33px 0px 15px;
+    max-width: 578px; }
+    .searchJob input {
+      height: 60px;
+      font-size: 24px;
+      line-height: 27px;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 73%;
+              flex: 0 73%;
+      padding: 5px 45px 5px  25px;
+      background-position: 96% 20px;
+      background-size: 25px 25px; }
+    .searchJob input[type="submit"] {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 25%;
+              flex: 0 25%;
+      letter-spacing: 0.9px; }
+    .searchJob p {
+      padding-top: 10px;
+      letter-spacing: 0px; } }
+.main_menu {
+  display: none; }
+
+.contactCall {
+  float: right;
+  padding-right: 10px;
+  padding-top: 8px; }
+  .contactCall p {
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0;
+    color: #2F2F2F;
+    display: inline-block;
+    position: relative;
+    padding-left: 25px; }
+    .contactCall p:before {
+      position: absolute;
+      left: 0;
+      top: 0px;
+      font-size: 20px;
+      color: #AA2423;
+      content: "\f27b";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit; }
+    .contactCall p span {
+      display: none; }
+    .contactCall p a {
+      text-decoration: none;
+      color: #AA2423; }
+
+.extraMenu a {
+  color: #fff;
+  background-color: #2B2B2B;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 19px; }
+  .extraMenu a:hover {
+    opacity: 0.85; }
+  .extraMenu a.primary {
+    background-color: #AA2423; }
+  .extraMenu a.secondary {
+    background-color: #FF8400; }
+
+.logo {
+  display: none; }
+
+.smaillLogo {
+  float: left; }
+
+@media only screen and (min-width: 480px) {
+  .contactCall p span {
+    display: inline-block;
+    padding-right: 5px; } }
+@media only screen and (min-width: 768px) {
+  .smaillLogo {
+    display: none; }
+
+  .logo {
+    display: block; } }
+@media only screen and (min-width: 1200px) {
+  .as_header {
+    padding: 118px 0px 122px; }
+    .as_header .headerLeft {
+      min-height: 375px; }
+
+  .as_mobile_menu {
+    display: none !important; }
+
+  .main_menu {
+    display: block !important;
+    float: left;
+    padding-right: 20px; }
+
+  .main_menuOuter {
+    color: #2F2F2F; }
+    .main_menuOuter ul {
+      padding: 0;
+      margin: 0; }
+      .main_menuOuter ul li {
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        line-height: 27px; }
+        .main_menuOuter ul li a {
+          display: block;
+          margin: 0;
+          padding: 5px 7px; }
+          .main_menuOuter ul li a:hover {
+            color: #AA2423; }
+    .main_menuOuter a {
+      color: #2F2F2F; }
+
+  .contactCall {
+    padding: 3px 0px 0px; }
+    .contactCall p {
+      font-size: 24px;
+      line-height: 27px;
+      letter-spacing: 0.6px; }
+
+  .extraMenu a {
+    padding: 11px 20px;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.55px;
+    min-width: 180px; } }
+@media only screen and (min-width: 1380px) {
+  .main_menuOuter {
+    padding: 15px 18px; }
+    .main_menuOuter ul li {
+      font-size: 28px;
+      line-height: 31px; }
+      .main_menuOuter ul li a {
+        padding: 5px 7px; }
+
+  .contactCall p {
+    font-size: 28px;
+    line-height: 31px; } }
+/*Black Section*/
+.bgimgBlack {
+  background-color: #3B3B3B;
+  color: #fff;
+  background-image: url("images/blackbg.jpg");
+  background-repeat: repeat-x;
+  padding: 25px 0px; }
+  .bgimgBlack h3 {
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    margin-bottom: 12px; }
+
+.jobCategory ul {
+  margin: 0;
+  padding: 0;
+  max-width: 328px; }
+  .jobCategory ul li {
+    list-style: none;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+    margin-bottom: 6px; }
+    .jobCategory ul li a {
+      color: #FFFFFF; }
+      .jobCategory ul li a:hover, .jobCategory ul li a.active {
+        color: #FF8400; }
+
+.whySolosOuter, .jobCategoryOuter, .latestJobOuter {
+  margin: 20px 0px 12px; }
+
+.whySolos p {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  margin-bottom: 12px; }
+  .whySolos p a {
+    color: #AA2423; }
+    .whySolos p a:hover {
+      color: #FF8400; }
+  .whySolos p strong {
+    font-weight: 700;
+    color: #FF8400; }
+
+.jobBox {
+  color: #fff;
+  border: 1px solid #9D9D9D;
+  background-color: #9D9D9D;
+  margin: 10px 0px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  padding: 15px 30px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  min-height: 166px; }
+  .jobBox h5 {
+    font-family: "MyriadPro-Cond";
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    margin-bottom: 7px; }
+  .jobBox address {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    margin-bottom: 0; }
+  .jobBox:hover {
+    background-color: #FF8400; }
+
+@media only screen and (min-width: 440px) {
+  .jobCategory ul {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .jobCategory ul li {
+      width: 50%;
+      padding-right: 10px; } }
+@media only screen and (min-width: 576px) {
+  .bgimgBlack {
+    padding: 50px 0px 20px; }
+
+  .jobCategory ul li {
+    width: 100%;
+    padding-right: 0px; }
+
+  .jobBox h5 {
+    margin-bottom: 0px;
+    line-height: 30px; } }
+@media (max-width: 991px) and (min-width: 769px) {
+  .jobBox {
+    padding: 20px 15px; } }
+@media only screen and (min-width: 992px) {
+  .bgimgBlack {
+    padding: 75px 0px 20px; }
+    .bgimgBlack h3 {
+      font-size: 30px;
+      line-height: 34px;
+      letter-spacing: -0.9px;
+      margin-bottom: 27px; }
+
+  .jobCategory ul li {
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 3px;
+    width: 50%;
+    padding-right: 10px; }
+
+  .whySolos h3 {
+    margin-bottom: 15px; }
+  .whySolos p {
+    font-size: 21px;
+    line-height: 24px;
+    letter-spacing: 0.29px;
+    margin-bottom: 18px; }
+
+  .latestJobOuter h3 {
+    margin-bottom: 19px; } }
+@media only screen and (min-width: 1380px) {
+  .bgimgBlack {
+    padding: 100px 0px 33px; }
+    .bgimgBlack h3 {
+      font-size: 33px;
+      line-height: 37px; }
+
+  .jobCategory ul li {
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 0.0px; }
+
+  .whySolos p {
+    font-size: 24px;
+    line-height: 27px; } }
+/*Footer*/
+.footerBottom {
+  background-color: #2B2B2B;
+  color: #A2A2A2;
+  font-family: "MyriadPro-Cond";
+  padding: 15px 0px; }
+  .footerBottom .copyRight {
+    margin-top: 15px; }
+  .footerBottom a {
+    color: #A2A2A2; }
+    .footerBottom a:hover {
+      color: #fff; }
+  .footerBottom p {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 19px;
+    font-weight: 400; }
+  .footerBottom ul {
+    padding: 0;
+    margin: 0; }
+    .footerBottom ul li {
+      font-size: 16px;
+      line-height: 19px;
+      padding: 3px 7px;
+      margin: 0;
+      letter-spacing: 0.5px;
+      font-weight: 400; }
+      .footerBottom ul li a {
+        display: block; }
+
+@media only screen and (min-width: 768px) {
+  .footerBottom {
+    padding: 25px 0px; }
+    .footerBottom .copyRight {
+      margin-top: 0px;
+      max-width: 230px; }
+    .footerBottom p {
+      font-size: 18px;
+      letter-spacing: 0px;
+      line-height: 21px; }
+    .footerBottom ul li {
+      font-size: 18px;
+      line-height: 21px;
+      padding: 3px 7px;
+      letter-spacing: 0px; } }
+@media only screen and (min-width: 992px) {
+  .footerBottom {
+    padding: 33px 0px; } }
+
+/*# sourceMappingURL=style.css.map */
