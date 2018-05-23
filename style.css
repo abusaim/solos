@@ -8,6 +8,11 @@
   src: url("fonts/squareserif_bold-webfont.woff2") format("woff2"), url("fonts/squareserif_bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url("fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/MyriadPro-Regular.otf") format("opentype"), url("fonts/MyriadPro-Regular.woff") format("woff"), url("fonts/MyriadPro-Regular.ttf") format("truetype"), url("fonts/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /* =WordPress Core
 -------------------------------------------------------------- */
 .alignnone {
@@ -271,6 +276,10 @@ body {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 10px; }
+  .as_header h2 {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 10px; }
   .as_header h4 {
     font-size: 26px;
     line-height: 29px;
@@ -456,6 +465,10 @@ body {
       line-height: 65px;
       margin-bottom: 15px;
       letter-spacing: -1.65px; }
+    .as_header h2 {
+      font-size: 48px;
+      line-height: 52px;
+      letter-spacing: -1.15px; }
     .as_header h4 {
       font-size: 36px;
       line-height: 41px;
@@ -575,13 +588,22 @@ body {
         margin: 0;
         padding: 0;
         font-size: 24px;
-        line-height: 27px; }
+        line-height: 27px;
+        position: relative; }
         .main_menuOuter ul li a {
           display: block;
           margin: 0;
           padding: 5px 7px; }
           .main_menuOuter ul li a:hover {
             color: #AA2423; }
+        .main_menuOuter ul li ul {
+          position: absolute;
+          top: 100%;
+          left: 0px;
+          padding-top: 10px;
+          background-color: #fff; }
+          .main_menuOuter ul li ul li {
+            list-style: none; }
     .main_menuOuter a {
       color: #2F2F2F; }
 
@@ -810,5 +832,547 @@ body {
 @media only screen and (min-width: 992px) {
   .footerBottom {
     padding: 33px 0px; } }
+/*About Us*/
+.contentQuestion {
+  padding: 25px 0px;
+  background-color: #3B3B3B;
+  color: #fff;
+  font-family: "squareserifbold", "MyriadPro-Cond";
+  font-weight: 400; }
+  .contentQuestion span, .contentQuestion a {
+    color: #AA2423; }
+  .contentQuestion span {
+    letter-spacing: -0.7px; }
+  .contentQuestion a:hover {
+    color: #FF8400; }
+  .contentQuestion h1 {
+    font-size: 33px;
+    line-height: 33px;
+    margin-bottom: 16px; }
+  .contentQuestion h2 {
+    font-size: 27px;
+    line-height: 30px;
+    margin-bottom: 14px; }
+  .contentQuestion h3 {
+    font-size: 23px;
+    line-height: 27px;
+    margin-bottom: 12px; }
+  .contentQuestion h4 {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 10px; }
+  .contentQuestion h5 {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 8px; }
+  .contentQuestion h6 {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 7px; }
+  .contentQuestion p, .contentQuestion li {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    font-family: "MyriadPro-Regular"; }
+
+.quateBoxOuter {
+  border: 8px solid #A42829;
+  background-color: #E37B7C;
+  border-radius: 3px;
+  position: relative;
+  margin: 20px 0px 0px;
+  max-width: 300px; }
+  .quateBoxOuter:before {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    font-size: 30px;
+    color: #fff;
+    content: "\f27b";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%); }
+  .quateBoxOuter p, .quateBoxOuter h5 {
+    font-family: "MyriadPro-Cond";
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 0; }
+  .quateBoxOuter p {
+    font-weight: 400; }
+  .quateBoxOuter a {
+    color: #fff; }
+    .quateBoxOuter a:hover {
+      color: #FF8400; }
+  .quateBoxOuter .quateBoxInner {
+    border-radius: 3px;
+    background-color: #A62E2F;
+    padding: 10px 10px 15px 50px;
+    border: 3px solid #E37B7C;
+    background-image: url("images/quarebd.jpg");
+    background-repeat: repeat;
+    background-size: auto 100%; }
+
+@media only screen and (min-width: 576px) {
+  .contentQuestion .midddleText {
+    max-width: 640px; } }
+@media only screen and (min-width: 1200px) {
+  .quateBoxOuter {
+    border-width: 16px;
+    margin: 0px;
+    max-width: 510px; }
+    .quateBoxOuter:before {
+      font-size: 30px;
+      left: 15px; }
+    .quateBoxOuter p, .quateBoxOuter h5 {
+      letter-spacing: 0.0px;
+      font-size: 30px;
+      line-height: 34px; }
+    .quateBoxOuter h5 {
+      letter-spacing: 0.25px; }
+
+  .contentQuestion {
+    padding: 60px 0px; }
+    .contentQuestion h1 {
+      font-size: 38px;
+      line-height: 41px;
+      margin-bottom: 26px; }
+    .contentQuestion h2 {
+      font-size: 33px;
+      line-height: 37px;
+      margin-bottom: 24px; }
+    .contentQuestion h3 {
+      font-size: 28px;
+      line-height: 31px;
+      margin-bottom: 22px; }
+    .contentQuestion h4 {
+      font-size: 24px;
+      line-height: 27px;
+      margin-bottom: 20px;
+      letter-spacing: -0.6px; }
+    .contentQuestion h5 {
+      font-size: 22px;
+      line-height: 25px;
+      margin-bottom: 18px; }
+    .contentQuestion h6 {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 15px; }
+    .contentQuestion p, .contentQuestion li {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 10px;
+      letter-spacing: -0.40px; }
+    .contentQuestion span {
+      font-size: 24px; }
+    .contentQuestion .quateBoxOuter p, .contentQuestion .quateBoxOuter h5 {
+      letter-spacing: 0.0px;
+      font-size: 30px;
+      line-height: 34px; }
+    .contentQuestion .quateBoxOuter h5 {
+      letter-spacing: 0.25px; } }
+@media only screen and (min-width: 1380px) {
+  .contentQuestion .quateBoxOuter {
+    border-width: 8px 16px 12px; }
+    .contentQuestion .quateBoxOuter .quateBoxInner {
+      padding: 39px 25px 48px 100px; }
+    .contentQuestion .quateBoxOuter:before {
+      font-size: 60px;
+      left: 30px;
+      font-weight: 700; }
+    .contentQuestion .quateBoxOuter p, .contentQuestion .quateBoxOuter h5 {
+      letter-spacing: 1.0px;
+      font-size: 33px;
+      line-height: 46px;
+      margin-bottom: 0; }
+    .contentQuestion .quateBoxOuter h5 {
+      letter-spacing: 2.8px;
+      line-height: 30px; } }
+.contentSidebar {
+  padding: 25px 0px;
+  color: #3B3B3B; }
+
+.fexiContent {
+  font-family: "MyriadPro-Regular";
+  margin: 25px 0px;
+  max-width: 700px; }
+  .fexiContent a {
+    color: #FF8400; }
+    .fexiContent a:hover {
+      text-decoration: underline; }
+  .fexiContent h1 {
+    font-size: 28px;
+    line-height: 31px;
+    color: #AA2423;
+    margin-bottom: 0px; }
+  .fexiContent h2 {
+    font-size: 24px;
+    line-height: 29px;
+    color: #AA2423;
+    margin-bottom: 0px; }
+  .fexiContent h3 {
+    font-size: 22px;
+    line-height: 27px;
+    color: #AA2423;
+    margin-bottom: 0px; }
+  .fexiContent h4 {
+    font-size: 22px;
+    line-height: 24px;
+    color: #AA2423;
+    margin-bottom: 0px;
+    font-family: "MyriadPro-Regular";
+    font-weight: 700; }
+  .fexiContent h5 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #AA2423;
+    margin-bottom: 0px; }
+  .fexiContent h6 {
+    font-size: 18px;
+    line-height: 21px;
+    color: #AA2423;
+    margin-bottom: 0px; }
+  .fexiContent p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 19px;
+    margin-bottom: 15px; }
+  .fexiContent ul {
+    margin-bottom: 15px; }
+    .fexiContent ul li {
+      list-style: none;
+      padding-left: 10px;
+      position: relative;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 400;
+      letter-spacing: 0px;
+      margin-bottom: 5px; }
+      .fexiContent ul li:before {
+        position: absolute;
+        left: 0px;
+        top: 2px;
+        font-size: 7px;
+        color: #3B3B3B;
+        content: "\f068";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit; }
+
+.joblatest {
+  margin: 20px auto;
+  max-width: 510px; }
+  .joblatest p {
+    padding: 15px 0px; }
+    .joblatest p a {
+      color: #AA2423;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0px;
+      text-decoration: underline; }
+      .joblatest p a:hover {
+        color: #FF8400; }
+
+.joblatestInner {
+  background-color: #F4F4F4; }
+  .joblatestInner .jobHeading {
+    border: 1px solid #CBCBCB;
+    padding: 15px; }
+    .joblatestInner .jobHeading h3 {
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0px;
+      margin-bottom: 5px; }
+  .joblatestInner .jobSearch input {
+    border: 1px solid #AEAEAE;
+    border-radius: 2px;
+    font-style: italic;
+    margin-bottom: 5px;
+    padding: 3px 35px 3px 15px;
+    background-position: 96% 8px;
+    background-size: 15px 15px;
+    background-image: url(images/search.png);
+    background-repeat: no-repeat;
+    height: 32px; }
+    .joblatestInner .jobSearch input[type='submit'] {
+      padding: 3px 12px;
+      color: #fff;
+      font-style: normal;
+      background: #AA2423;
+      cursor: pointer;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+      border: none; }
+      .joblatestInner .jobSearch input[type='submit']:hover {
+        background: #FF8400; }
+  .joblatestInner .jobArea {
+    padding: 0px 15px 15px; }
+    .joblatestInner .jobArea .boxJob {
+      margin: 20px 0px;
+      padding: 0px 25px;
+      position: relative; }
+      .joblatestInner .jobArea .boxJob:before {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 20px;
+        display: block;
+        content: '';
+        background-image: url("images/job.png");
+        background-size: 20px 18px;
+        background-repeat: no-repeat;
+        background-position: 0px center; }
+      .joblatestInner .jobArea .boxJob:after {
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        font-size: 30px;
+        color: #3B3B3B;
+        content: "\f054";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: 700;
+        text-decoration: inherit;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s; }
+      .joblatestInner .jobArea .boxJob:hover:after {
+        color: #AA2423; }
+    .joblatestInner .jobArea h5 {
+      font-family: "MyriadPro-Regular";
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #AA2423;
+      font-weight: 700;
+      margin-bottom: 0px; }
+    .joblatestInner .jobArea p {
+      font-family: "MyriadPro-Regular";
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #3B3B3B;
+      font-weight: 400;
+      padding: 0px; }
+
+@media only screen and (min-width: 440px) {
+  .jobHeading {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+  .joblatestInner .jobSearch input {
+    float: left;
+    width: 68%; }
+    .joblatestInner .jobSearch input[type='submit'] {
+      float: right;
+      width: 30%; }
+  .joblatestInner .jobArea .boxJob {
+    padding: 0px 35px;
+    position: relative; }
+    .joblatestInner .jobArea .boxJob:before {
+      width: 30px;
+      background-size: 28px 22px; } }
+@media only screen and (min-width: 992px) {
+  .jobHeading {
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start; }
+
+  .joblatest {
+    margin: 20px 0px 20px auto; } }
+@media only screen and (min-width: 1200px) {
+  .joblatest > p {
+    font-family: "MyriadPro-Regular"; }
+
+  .fexiContent ul li {
+    font-size: 22px; }
+
+  .contentSidebar {
+    min-height: 563px;
+    padding: 40px 0px; }
+
+  .fexiContent h1 {
+    font-size: 32px;
+    line-height: 35px; }
+  .fexiContent h2 {
+    font-size: 28px;
+    line-height: 31px; }
+  .fexiContent h3 {
+    font-size: 24px;
+    line-height: 28px; }
+  .fexiContent h4 {
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: 0.0px; }
+  .fexiContent h5 {
+    font-size: 22px;
+    line-height: 24px; }
+  .fexiContent h6 {
+    font-size: 20px;
+    line-height: 21px; }
+  .fexiContent p {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.55px;
+    line-height: 25px;
+    margin-bottom: 33px; }
+  .fexiContent ul {
+    margin-bottom: 15px; }
+    .fexiContent ul li {
+      list-style: none;
+      padding-left: 10px;
+      position: relative;
+      font-size: 22px;
+      line-height: 25px;
+      font-weight: 400;
+      letter-spacing: -0.5px;
+      margin-bottom: 1px; }
+      .fexiContent ul li:before {
+        position: absolute;
+        left: 0px;
+        top: 2px;
+        font-size: 7px;
+        color: #3B3B3B;
+        content: "\f068";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit; } }
+@media only screen and (min-width: 1380px) {
+  .jobHeading {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+  .joblatestInner .jobHeading {
+    padding: 18px 18px 11px 36px; }
+    .joblatestInner .jobHeading h3 {
+      font-size: 24px;
+      line-height: 27px;
+      letter-spacing: -0.75px; }
+  .joblatestInner .jobSearch {
+    width: 305px; }
+    .joblatestInner .jobSearch input {
+      width: 73%; }
+      .joblatestInner .jobSearch input[type='submit'] {
+        width: 25%;
+        letter-spacing: -0.5px; }
+  .joblatestInner .jobArea {
+    padding: 0px 15px 15px; }
+    .joblatestInner .jobArea .boxJob {
+      margin: 13px 0px;
+      padding: 0px 53px; }
+      .joblatestInner .jobArea .boxJob:before {
+        width: 45px;
+        background-size: 28px 22px;
+        background-position: 11px center; }
+      .joblatestInner .jobArea .boxJob:after {
+        font-size: 35px; }
+    .joblatestInner .jobArea h5 {
+      letter-spacing: 0.05px; }
+    .joblatestInner .jobArea p {
+      letter-spacing: -0.5px; } }
+@media only screen and (min-width: 1820px) {
+  .leftChalf {
+    position: relative; }
+    .leftChalf:before {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      content: '';
+      display: block;
+      height: 100%;
+      width: 220px;
+      background-image: url("images/halfcircle.png");
+      background-repeat: no-repeat;
+      background-position: 0% center; } }
+.smallHeader.as_header {
+  padding: 110px 0px 30px; }
+  .smallHeader.as_header .searchJob {
+    max-width: 380px; }
+  .smallHeader.as_header .mainHeader {
+    top: 12px;
+    bottom: auto; }
+  .smallHeader.as_header .main_banner .bgimg:before {
+    background-color: rgba(255, 132, 0, 0.52); }
+
+@media only screen and (min-width: 992px) {
+  .smallHeader.as_header .headerLeft {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 100%;
+    position: relative;
+    z-index: 4; }
+    .smallHeader.as_header .headerLeft h2 {
+      margin-bottom: 0px; } }
+@media only screen and (min-width: 1200px) {
+  .smallHeader.as_header .headerLeft {
+    min-height: 100px;
+    max-width: 100%; }
+    .smallHeader.as_header .headerLeft .searchJob {
+      max-width: 578px; }
+    .smallHeader.as_header .headerLeft h2 {
+      margin-bottom: 0px; } }
+@media only screen and (min-width: 1380px) {
+  .smallHeader.as_header {
+    padding: 135px 0px 33px; }
+    .smallHeader.as_header .headerLeft {
+      min-height: 120px; }
+      .smallHeader.as_header .headerLeft .searchJob {
+        margin: 0px; } }
 
 /*# sourceMappingURL=style.css.map */
